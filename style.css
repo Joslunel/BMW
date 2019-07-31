@@ -106,8 +106,18 @@ a {
 /* intro */
 
 .intro video {
-  width: 100vw;
+  width: 100%;
+  position: relative;
 }
+.intro video::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  background: #262626;
+
+}
+
 .intro-video a {
   position: relative;
 }
