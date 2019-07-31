@@ -117,12 +117,12 @@ a {
   left: 7vw;
   color: var(--white);
 }
-.text-item h3 {
+.subline_light {
   font-size: 2vw;
   font-weight: lighter;
   margin-bottom: 0;
 }
-.text-item h2 {
+.headline_light {
   font-size: 4vw;
   font-weight: lighter;
   margin-top: 0;
