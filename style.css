@@ -328,16 +328,99 @@ a {
 
 /* xplainer */
 
+.xplainer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.vision-vehicle {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.glamping {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.trending-sports {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.bmw-explained {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.guide {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.time-is-money {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.for-car-aficionados {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.guide-to-terms {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.self-driving-cars {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.design {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.classic-car {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.playlists {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
 .xplainer {
   position: relative;
 }
+.xplainer-image {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-.xplainer-image img {
-  width: 100%;
+.xplainer-video {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
 }
-.xplainer-video video {
-  width: 100%;
-}
+
 .xplainer-text {
   position: absolute;
   top: 0;
