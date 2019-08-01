@@ -174,12 +174,25 @@ a {
 .suggestions-image_right img {
   width: 100%;
 }
+.suggestions-image_left {
+  transition: all 3s ease-in-out;
+}
+.suggestions-image_left:hover {
+  transform: scale(1.25);
+}
+.suggestions-image_right {
+  transition: all 3s ease-in-out;
+}
+.suggestions-image_right:hover {
+  transform: scale(1.25);
+}
 .container_left {
   grid-column-start: 1;
   grid-column-end: 2;
   position: relative;
   border-top: 2px solid white;
   border-right: 2px solid white;
+  overflow: hidden;
 }
 
 .suggestions-image_left::after {
@@ -199,6 +212,7 @@ a {
   position: relative;
   border-top: 2px solid white;
   border-left: 2px solid white;
+  overflow: hidden;
 }
 .suggestions-image_right::after {
   content: "";
