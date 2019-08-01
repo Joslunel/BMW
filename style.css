@@ -332,6 +332,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2px;
 }
 .vision-vehicle {
   grid-column-start: 1;
