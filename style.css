@@ -305,22 +305,22 @@ a {
   justify-content: center;
 }
 
-.find-bmw_text {
+.headline_text {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--dark-grey);
   margin: 0;
 }
-.find-bmw_text p {
+.headline_text p {
   font-size: 2vw;
   margin: 2rem 0 0 0;
 }
-.find-bmw_text h2 {
+.headline_text h2 {
   font-size: 5vw;
   margin: 0;
 }
-.find-bmw_text a {
+.headline_text a {
   font-size: 2vw;
   margin-bottom: 2vw;
   color: var(--dark-grey);
@@ -464,4 +464,29 @@ a {
   padding: 0;
   margin: 3vw;
   width: 24vw;
+}
+.btn_dark_wide:hover {
+  color: var(--white);
+  background: var(--middle-grey);
+}
+
+/* social */
+
+.social {
+  width: 100vw;
+  background: var(--light-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.headline_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social .headline_text h2 {
+  margin-top: 2rem;
+}
+.social .headline_text p {
+  margin: 0;
 }
