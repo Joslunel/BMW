@@ -325,3 +325,22 @@ a {
   margin-bottom: 2vw;
   color: var(--dark-grey);
 }
+
+/* xplainer */
+
+.xplainer {
+  position: relative;
+}
+
+.xplainer-image img {
+  width: 100%;
+}
+.xplainer-video video {
+  width: 100%;
+}
+.xplainer-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
