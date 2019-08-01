@@ -259,12 +259,14 @@ a {
 .stories-wrapper {
   display: flex;
   flex-flow: row nowrap;
+  align-items: baseline;
 }
 
 .stories-item {
   display: flex;
   flex-flow: column nowrap;
-  margin: 5rem 2rem 0 2rem;
+  margin: 5rem 0 2rem 2rem;
+  padding-right: 2rem;
 }
 .stories-item_text {
   display: flex;
@@ -294,4 +296,32 @@ a {
   border-radius: 50%;
   border: 2px solid var(--dark-grey);
   display: block;
+}
+
+/* find-bmw */
+
+.find-bmw {
+  display: flex;
+  justify-content: center;
+}
+
+.find-bmw_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-grey);
+  margin: 0;
+}
+.find-bmw_text p {
+  font-size: 2vw;
+  margin: 2rem 0 0 0;
+}
+.find-bmw_text h2 {
+  font-size: 5vw;
+  margin: 0;
+}
+.find-bmw_text a {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  color: var(--dark-grey);
 }
