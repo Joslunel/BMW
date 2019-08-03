@@ -8,7 +8,7 @@ html {
 }
 body {
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "BMWTypeWebLightAll", "Open Sans", sans-serif;
 
   background: var(--black);
   margin: 0 auto;
@@ -27,6 +27,11 @@ a {
   width: 12rem;
   text-align: center;
   font-size: 1rem;
+}
+@font-face {
+  font-family: "BMWTypeWebLightAll";
+  src: url("/etc/designs/bmwcom/base/fonts/BMWTypeWebLightAll.woff")
+    format("woff2");
 }
 
 /* navigation */
