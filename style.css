@@ -9,8 +9,8 @@ html {
 body {
   width: 100%;
   font-family: "BMWTypeWebLightAll", "Open Sans", sans-serif;
-
-  background: var(--black);
+  background: var(--light-grey);
+  /* background: var(--black); */
   margin: 0 auto;
 }
 a {
@@ -358,6 +358,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr) auto;
   grid-gap: 2px;
+  background: var(--white);
 }
 .vision-vehicle {
   grid-column-start: 1;
@@ -567,8 +568,33 @@ a {
 }
 
 /* social */
-.instagram {
+.screens {
   background: var(--light-grey);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: repeat(3, 1fr);
+  justify-items: center;
+  max-width: 1100px;
+  margin: 5rem auto;
+  grid-gap: 2rem;
+}
+.col_left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.col_mid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.col_right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .instagram_screen {
   background: var(--white);
@@ -608,6 +634,9 @@ a {
 }
 .insta_image img {
   width: 100%;
+}
+.insta_image:hover {
+  cursor: pointer;
 }
 .insta_image p {
   font-weight: 600;
@@ -675,7 +704,7 @@ a {
 .insta-likes {
   border-top: 1px solid lightgray;
   max-width: 370px;
-  margin: 0 auto;
+  margin: 0 1rem;
 }
 .insta-likes p {
   margin: 0;
@@ -749,6 +778,9 @@ a {
   background-position: -25px -136px;
   height: 24px;
   width: 24px;
+}
+.embedSpriteSaveOpen:hover {
+  opacity: 0.5;
 }
 .insta_comments {
   border-top: 1px solid lightgray;
