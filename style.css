@@ -20,6 +20,7 @@ a {
   --white: #ffffff;
   --light-grey: #f8f8f8;
   --middle-grey: #4d4d4d;
+  --facebook-grey: #7f7f7f;
   --dark-grey: #262626;
   --insta-blue: #3897f0;
 }
@@ -835,7 +836,11 @@ a {
   line-height: 1.2rem;
   padding: 1rem;
 }
-.facebook_screen.col_mid {
+.facebook_screen.col_mid .face_likes-icons a {
+  color: var(--facebook-grey);
+}
+.facebook_screen.col_mid .thumb {
+  background-position: 0 -118px;
 }
 .face_header {
   display: flex;
