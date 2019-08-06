@@ -842,6 +842,22 @@ a {
 .facebook_screen.col_mid .thumb {
   background-position: 0 -118px;
 }
+.facebook_screen.col_mid .comment {
+  background-position: 0 -118px;
+}
+.facebook_screen.col_mid .share {
+  background-position: 0 -118px;
+}
+.facebook_screen.col_mid .face_likes {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: inherit;
+  bottom: 1rem;
+  padding: 1rem 0 0 0;
+}
+/* .facebook_screen.col_mid .face_likes-thumb {
+  position: absolute;
+  
+} */
 .face_header {
   display: flex;
   flex-flow: row nowrap;
@@ -904,6 +920,7 @@ a {
 .face_header_name a:hover {
   text-decoration: underline;
 }
+
 .face_image img {
   width: 100%;
   display: block;
@@ -940,6 +957,7 @@ a {
   margin-bottom: 1rem;
   margin-left: 0.5rem;
 }
+
 .face_likes-thumb {
   display: flex;
   flex-direction: row;
