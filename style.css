@@ -828,36 +828,66 @@ a {
 .facebook_screen.col_left {
   align-self: start;
 }
+.facebook_screen.col_right {
+  align-self: start;
+}
 .facebook_screen.col_mid {
+  background: var(--white);
+}
+.facebook_screen.col_right {
   background: var(--white);
 }
 .facebook_screen.col_mid p {
   font-size: 0.9rem;
   line-height: 1.2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.facebook_screen.col_right p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .facebook_screen.col_mid .face_likes-icons a {
+  color: var(--facebook-grey);
+}
+.facebook_screen.col_right .face_likes-icons a {
   color: var(--facebook-grey);
 }
 .facebook_screen.col_mid .thumb {
   background-position: 0 -118px;
 }
+.facebook_screen.col_right .thumb {
+  background-position: 0 -118px;
+}
 .facebook_screen.col_mid .comment {
+  background-position: 0 -118px;
+}
+.facebook_screen.col_right .comment {
   background-position: 0 -118px;
 }
 .facebook_screen.col_mid .share {
   background-position: 0 -118px;
 }
+.facebook_screen.col_right .share {
+  background-position: 0 -118px;
+}
 .facebook_screen.col_mid .face_likes {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: inherit;
-  bottom: 1rem;
-  padding: 1rem 0 0 0;
+  bottom: 0rem;
+  width: 19rem;
+  left: 1rem;
+  padding-top: 0.6rem;
 }
-/* .facebook_screen.col_mid .face_likes-thumb {
-  position: absolute;
-  
-} */
+.facebook_screen.col_right .face_likes {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: inherit;
+  bottom: 0rem;
+  width: 19rem;
+  left: 1rem;
+  padding-top: 0.6rem;
+}
+
 .face_header {
   display: flex;
   flex-flow: row nowrap;
@@ -933,11 +963,6 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
-  /* background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0) 100%
-  ); */
 }
 .col_left .face_likes {
   position: absolute;
