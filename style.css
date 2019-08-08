@@ -6,11 +6,11 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 body {
   width: 100%;
   font-family: "BMWTypeWebLightAll", "Open Sans", sans-serif;
   background: var(--light-grey);
-  /* background: var(--black); */
   margin: 0 auto;
 }
 a {
@@ -1269,4 +1269,54 @@ a {
 
 .embedSpriteHeartOpenRed {
   transform: scale(0.6);
+}
+
+/* footer */
+.footer {
+  background: var(--dark-grey);
+}
+.footer-wrap {
+  padding: 4rem 8rem 4rem 12rem;
+}
+.footer-columns {
+  display: flex;
+  margin-top: 4rem;
+}
+.footer-wrap p {
+  color: var(--light-grey);
+  font-weight: 100;
+}
+.languages {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.languages a {
+  color: #7f7f7f;
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+  font-weight: 100;
+}
+.languages a:hover {
+  color: var(--white);
+}
+.footer-column {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 7rem;
+  width: 9rem;
+}
+.footer-column h4 {
+  color: var(--white);
+  font-size: 0.9rem;
+  border-bottom: 1px solid #4d4d4d;
+  padding-bottom: 1rem;
+}
+.footer-column a {
+  color: #999;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+.footer-column a:hover {
+  color: var(--white);
 }
