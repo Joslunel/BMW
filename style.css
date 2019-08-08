@@ -6,7 +6,11 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+@font-face {
+  font-family: "BMWTypeWebLightAll";
+  src: url("/etc/designs/bmwcom/base/fonts/BMWTypeWebLightAll.woff")
+    format("woff2");
+}
 body {
   width: 100%;
   font-family: "BMWTypeWebLightAll", "Open Sans", sans-serif;
@@ -30,35 +34,87 @@ a {
   text-align: center;
   font-size: 1rem;
 }
-@font-face {
-  font-family: "BMWTypeWebLightAll";
-  src: url("/etc/designs/bmwcom/base/fonts/BMWTypeWebLightAll.woff")
-    format("woff2");
+
+@media (max-width: 699px) {
+  .intro-video.hd {
+    display: none;
+  }
+  .navigation-bar .navigation-bar__items {
+    display: none;
+  }
+  .text-item {
+    position: absolute;
+    bottom: 8vw;
+    left: 7vw;
+    color: var(--white);
+  }
+  .navigation-bar .navigation-bar__logo {
+    width: 4rem;
+  }
+  .suggestions-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+  }
+  .suggestions-container .container_right {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .suggestions-container .container_left {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
-
-/* navigation */
-
-@media (min-width: 699px) {
+@media (min-width: 700px) {
+  .intro-video.square {
+    display: none;
+  }
   .navigation-bar__mobile-menu {
     display: none;
   }
+  .text-item {
+    position: absolute;
+    top: 25vw;
+    left: 7vw;
+    color: var(--white);
+  }
+  .suggestions-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2px;
+  }
+  /* .container_left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    overflow: hidden;
+  }
+  .container_right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    overflow: hidden;
+  } */
 }
+/* navigation */
 
 .navigation {
   background: var(--light-grey);
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin: 0;
 }
 .navigation-bar {
   display: flex;
   flex-flow: row nowrap;
-  width: 1200px;
+  max-width: 1100px;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   z-index: 1;
+  position: relative;
 }
 .navigation-bar__items {
   display: flex;
@@ -95,33 +151,26 @@ a {
   border-left: 1px solid var(--middle-grey);
 }
 .navigation-bar__logo {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   width: 6rem;
   margin-top: 0.5rem;
+  margin-right: 2rem;
 }
 .navigation-bar__mobile-menu a {
   color: var(--white);
-}
-@media (max-width: 700px) {
-  .navigation-bar__items {
-    display: none;
-  }
-  .navigation {
-    background: none;
-  }
-  .intro {
-    margin-top: -2rem;
-  }
+  position: absolute;
+  margin: 2rem;
 }
 
 /* intro */
 .intro {
   overflow: hidden;
+  position: relative;
 }
 .intro-video {
-  position: relative;
+  /* position: relative; */
   transition: all 3s ease-in-out;
 }
 .intro-video video {
@@ -147,15 +196,15 @@ a {
   opacity: 1;
 }
 
-.intro-video a {
+.intro-video {
   position: relative;
 }
-.text-item {
+/* .text-item {
   position: absolute;
   top: 25vw;
   left: 7vw;
   color: var(--white);
-}
+} */
 
 .subline {
   font-size: 2vw;
@@ -182,12 +231,12 @@ a {
 }
 
 /* suggestions */
-.suggestions-container {
+
+/* .suggestions-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template: 1fr;
   grid-gap: 2px;
-}
+} */
 .suggestions-image img {
   width: 100%;
   display: block;
