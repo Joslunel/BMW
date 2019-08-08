@@ -569,11 +569,11 @@ a {
 }
 
 /* social */
-.screens {
+.screens_instagram {
   background: var(--light-grey);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template: repeat(3, 1fr);
+  grid-template: 1fr;
   justify-items: center;
   max-width: 1100px;
   margin: 5rem auto;
@@ -597,23 +597,61 @@ a {
   grid-row-start: 1;
   grid-row-end: 2;
 }
+.screens_facebook {
+  background: var(--light-grey);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: 1fr;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 5rem auto;
+  grid-gap: 2rem;
+}
 .facebook_screen.col_left {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .facebook_screen.col_mid {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .facebook_screen.col_right {
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.screens_twitter {
+  background: var(--light-grey);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: 1fr;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 5rem auto;
+  grid-gap: 2rem;
+}
+.twitter_screen.col_left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.twitter_screen.col_mid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.twitter_screen.col_right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 /* instagram */
@@ -1094,6 +1132,15 @@ a {
   align-items: center;
   max-width: 400px;
 }
+.twitter_screen.col_left {
+  align-self: start;
+}
+.twitter_screen.col_mid {
+  align-self: start;
+}
+.twitter_screen.col_right {
+  align-self: start;
+}
 .twitter_bmwlogo img {
   width: 100%;
   display: block;
@@ -1195,16 +1242,26 @@ a {
 }
 .twitter_comments {
   border-top: 1px solid lightgray;
-  margin: 0.5rem;
+  margin: 0.5rem 1rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   color: var(--dark-grey);
 }
-
-
-
+.twitter_comments p {
+  color: #2b7bb9;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.twitter_comments .embedSpriteComment {
+  transform: scale(0.6);
+  background-position: -137px -37px;
+}
+.twitter_comments .fas.fa-chevron-right {
+  color: #999;
+  margin-left: auto;
+}
 
 .twitter-likes_symbols .embedSpriteHeartOpen {
   transform: scale(0.6);
@@ -1212,11 +1269,4 @@ a {
 
 .embedSpriteHeartOpenRed {
   transform: scale(0.6);
-}
-.twitter_comments .embedSpriteComment {
-  transform: scale(0.6);
-}
-.twitter_comments p {
-  color: #2b7bb9;
-  font-size: 0.8rem;
 }
