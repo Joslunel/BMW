@@ -35,73 +35,6 @@ a {
   font-size: 1rem;
 }
 
-@media (max-width: 699px) {
-  .intro-video.hd {
-    display: none;
-  }
-  .navigation-bar .navigation-bar__items {
-    display: none;
-  }
-  .text-item {
-    position: absolute;
-    bottom: 8vw;
-    left: 7vw;
-    color: var(--white);
-  }
-  .navigation-bar .navigation-bar__logo {
-    width: 4rem;
-  }
-  .suggestions-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2px;
-  }
-  .suggestions-container .container_right {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .suggestions-container .container_left {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-@media (min-width: 700px) {
-  .intro-video.square {
-    display: none;
-  }
-  .navigation-bar__mobile-menu {
-    display: none;
-  }
-  .text-item {
-    position: absolute;
-    top: 25vw;
-    left: 7vw;
-    color: var(--white);
-  }
-  .suggestions-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 2px;
-  }
-  /* .container_left {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    position: relative;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    overflow: hidden;
-  }
-  .container_right {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    position: relative;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    overflow: hidden;
-  } */
-}
 /* navigation */
 
 .navigation {
@@ -199,12 +132,6 @@ a {
 .intro-video {
   position: relative;
 }
-/* .text-item {
-  position: absolute;
-  top: 25vw;
-  left: 7vw;
-  color: var(--white);
-} */
 
 .subline {
   font-size: 2vw;
@@ -232,11 +159,6 @@ a {
 
 /* suggestions */
 
-/* .suggestions-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2px;
-} */
 .suggestions-image img {
   width: 100%;
   display: block;
@@ -289,12 +211,12 @@ a {
 .suggestions-image .light:hover:after {
   opacity: 1;
 }
-.text-suggestions {
+/* .text-suggestions {
   position: absolute;
   top: 25vw;
   left: 5vw;
   color: var(--white);
-}
+} */
 .text-suggestions h2 {
   font-size: 2.5vw;
   font-weight: lighter;
@@ -1368,4 +1290,267 @@ a {
 }
 .footer-column a:hover {
   color: var(--white);
+}
+
+/* media queries */
+
+@media (max-width: 699px) {
+  .intro-video.hd {
+    display: none;
+  }
+  .navigation-bar .navigation-bar__items {
+    display: none;
+  }
+  .text-item {
+    position: absolute;
+    bottom: 8vw;
+    left: 7vw;
+    color: var(--white);
+  }
+  .navigation-bar .navigation-bar__logo {
+    width: 4rem;
+  }
+  .suggestions-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+  }
+  .suggestions-container .container_right {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .suggestions-container .container_left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .text-suggestions {
+    position: absolute;
+    bottom: 5vw;
+    left: 5vw;
+    color: var(--white);
+  }
+  .text-suggestions h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .text-suggestions h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  .xplainer-container {
+    /* display: grid; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, auto);
+    /* grid-gap: 2px;
+    background: var(--white); */
+  }
+  .vision-vehicle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .glamping {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .trending-sports {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .bmw-explained {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .guide {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .time-is-money {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+  .for-car-aficionados {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+  .guide-to-terms {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+  .self-driving-cars {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+  .design {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+  .classic-car {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+  .playlists {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+  .xplainer-text .subline_light {
+    font-size: 0.6rem;
+    color: var(--white);
+    margin: 0 0 0 2vw;
+  }
+  .xplainer-text .headline_light {
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: bold;
+    margin: 0 0 0 2vw;
+  }
+  .xplainer-text .subline_dark {
+    font-size: 0.6rem;
+    color: var(--dark-grey);
+    margin: 0 0 0 2vw;
+  }
+  .xplainer-text .headline_dark {
+    font-size: 0.8rem;
+    color: var(--dark-grey);
+    font-weight: bold;
+    margin: 0 0 0 2vw;
+  }
+  .screens_instagram {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .instagram_screen.col_left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .instagram_screen.col_mid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .instagram_screen.col_right {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .screens_facebook {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .facebook_screen.col_left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .facebook_screen.col_mid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .facebook_screen.col_right {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .screens_twitter {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .twitter_screen.col_left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .twitter_screen.col_mid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .twitter_screen.col_right {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .footer-wrap {
+    padding: 4rem;
+  }
+  .footer-columns {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 4rem;
+  }
+  .languages {
+    justify-content: center;
+  }
+  .footer-column h4 {
+    width: 70vw;
+  }
+  .footer-wrap p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .intro-video.square {
+    display: none;
+  }
+  .navigation-bar__mobile-menu {
+    display: none;
+  }
+  .text-item {
+    position: absolute;
+    top: 25vw;
+    left: 7vw;
+    color: var(--white);
+  }
+  .suggestions-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2px;
+  }
+  .text-suggestions {
+    position: absolute;
+    top: 25vw;
+    left: 5vw;
+    color: var(--white);
+  }
 }
