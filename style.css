@@ -1343,11 +1343,11 @@ a {
     font-weight: lighter;
   }
   .xplainer-container {
-    /* display: grid; */
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, auto);
-    /* grid-gap: 2px;
-    background: var(--white); */
+    grid-gap: 2px;
+    background: var(--white);
   }
   .vision-vehicle {
     grid-column-start: 1;
